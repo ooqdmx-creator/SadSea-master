@@ -276,7 +276,7 @@ header
     inset 0 0 32px #c6e2ff;*/
     
     
-    background: linear-gradient(0.25turn, black, #010B3C, #9AE0FF);
+    background: linear-gradient(0.25turn, black, #0a0a0a, #0a0a0a);
 
     
 
@@ -877,7 +877,7 @@ footer
 	width: 100%;
 
 	/*background: linear-gradient(0.25turn, #0465B3, #0465B3, #0465B3); */
-	background-color: #002B4E;
+	background-color: #0a0a0a;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
